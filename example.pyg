@@ -1,0 +1,16 @@
+---
+INFO:
+    title: "I am a Pygnata example file"
+    author: "Me"
+    date: "2015-07-23 22:29:23"
+    version: 0.1
+    description: "this is a description of the pyg file"
+    source: "the source can be an URL"
+---
+VAR:
+    my_custom_filename: "The custom filename"
+---
+TREE:
+- my_folder:
+    - my_file
+    - {{my_custom_filename}}.py
