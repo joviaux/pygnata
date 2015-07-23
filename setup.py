@@ -5,12 +5,11 @@
 #Copyright (c) 2015 Alexandre LM, Dimitri S
 
 from setuptools import setup, find_packages
+from pip.req import parse_requirements
 
 #Open requirements
-with open('./requirements.txt') as f:
-    required = f.read().splitlines()
-
-import pygnata
+install_reqs = parse_requirements('./requirements.txt', session=False)
+required = [str(ir.req) for ir in install_reqs]
 
 # Initiate the setup function
 setup(
@@ -19,7 +18,7 @@ setup(
     name='pygnata',
 
     # The pygnata version
-    version=pygnata.__version__,
+    version="0.0.1",
 
     #Find all the package to insert
     packages=find_packages(),
