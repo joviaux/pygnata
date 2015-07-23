@@ -12,6 +12,7 @@ To install Pygnata, just clone the repository and make a python setup:
 ```
 git clone https://github.com/joviaux/pygnata.git
 cd pygnata
+pip install -r requirements.txt
 python setup.py install
 ```
 #### Usage
