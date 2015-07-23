@@ -8,11 +8,16 @@ Pygnata is a command-line application for creating a project tree from a templat
  * Use YAML and Jinja2 for the template file.
 
 #### Setup 
-
+To install Pygnata, just clone the repository and make a python setup:
+```
+git clone https://github.com/joviaux/pygnata.git
+cd pygnata
+python setup.py install
+```
 #### Usage
 ##### Create project tree from a .pyg file
 ```
-pygnata my_pyg_file_name
+pygnata <my_pyg_file_name>
 ```
 ##### Create a .pyg file from a existing path
 
