@@ -5,11 +5,10 @@
 #Copyright (c) 2015 Alexandre LM, Dimitri S
 
 from setuptools import setup, find_packages
-from pip.req import parse_requirements
 
 #Open requirements
-install_reqs = parse_requirements('./requirements.txt', session=False)
-required = [str(ir.req) for ir in install_reqs]
+with open('requirements.txt') as f:
+    required = f.read().splitlines()
 
 # Initiate the setup function
 setup(
