@@ -1,0 +1,14 @@
+---
+INFO:
+    title: "My Pygnata file"
+    author: "Me"
+    date: {{date}}
+    version: 0.1
+    description: "this is a description of the pyg file"
+    source: "the source can be an URL"
+---
+VAR:
+
+---
+TREE:
+{{tree}}

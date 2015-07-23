@@ -1,0 +1,2 @@
+recursive-include pygnata/config *.conf
+recursive-include pygnata/templates *.pyglate
