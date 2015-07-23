@@ -1,4 +1,5 @@
 ## Pygnata [Build in progress]
+[![Build Status](https://drone.io/github.com/joviaux/pygnata/status.png)](https://drone.io/github.com/joviaux/pygnata/latest)
 ---
 #### Description
 Pygnata is a command-line application for create project tree from a template file (.pyg file).
