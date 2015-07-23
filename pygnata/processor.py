@@ -3,7 +3,7 @@
 #The MIT License (MIT)
 #Copyright (c) 2015 Alexandre LM, Dimitri S
 
-from pathlib import *
+from path import path
 from .logger import logger
 
 
@@ -43,7 +43,7 @@ class PygnataProcessor(object):
             :type tree_array: list
 
         """
-        root = Path(root_path)
+        root = path(root_path)
 
         #Browse the tree array
         for value in tree_lst:
