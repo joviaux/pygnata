@@ -2,6 +2,7 @@
 [![Build Status](https://drone.io/github.com/joviaux/pygnata/status.png)](https://drone.io/github.com/joviaux/pygnata/latest)
 [![Build Status](https://scrutinizer-ci.com/g/joviaux/pygnata/badges/build.png?b=master)](https://scrutinizer-ci.com/g/joviaux/pygnata/build-status/master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/joviaux/pygnata/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/joviaux/pygnata/?branch=master)
+[![PyPI version](https://badge.fury.io/py/pygnata.svg)](http://badge.fury.io/py/pygnata)
 #### Description
 Pygnata is a command-line application for creating a project tree from a template file (.pyg file).
 #### Features
