@@ -11,7 +11,6 @@ from path import path
 from jinja2 import Environment
 from .config.config import pygconfig
 from .exception import BuilderError
-from .logger import logger
 
 
 class PygnataBuilder(object):
@@ -85,8 +84,8 @@ class PygnataBuilder(object):
         dest_path = dest_folder / dest_name
 
         #Open the template defining the .pyg file
-        with open(self.template, 'r') as fd:
-            template = fd.read()
+        with open(self.template, 'r') as src_file_desc:
+            template = src_file_desc.read()
 
             #browse the field list and launch the appropriate function
             for field, funct in list(self.fields.items()):
@@ -98,8 +97,8 @@ class PygnataBuilder(object):
             new_template = new_template.render(self.fields)
 
             #open the destination file and write the new template inside
-            with open(dest_path, 'w') as cd:
-                cd.write(str(new_template))
+            with open(dest_path, 'w') as dest_file_desc:
+                dest_file_desc.write(str(new_template))
 
         #return the absolute path of the .pyg file
         return dest_path
@@ -181,19 +180,19 @@ class PygnataBuilder(object):
                     if objects.isdir():
                         tmp_dir = {}
                         #Call generate_tree_dict recursively
-                        tmp_dir = self.generate_tree_dict(objects, tmp_dir, ignored)
+                        tmp_dir = self.generate_tree_dict(objects, ignored)
                         tree_dic[str(root_path.name)].append(tmp_dir)
 
         return tree_dic
 
-    def match_with_regex(self, input, ignored_lst):
+    def match_with_regex(self, value, ignored_lst):
         """
             Test if a string match with a list of regex
 
-            :param input: The string to test
+            :param value: The string to test
             :param ignored_lst: A list of regex use to ignore files and folders
 
-            :type input: string
+            :type value: string
             :type ignored_lst: list
 
             :return: If the name match with a regex
@@ -202,6 +201,6 @@ class PygnataBuilder(object):
         if ignored_lst:
             for regex in ignored_lst:
                 #If only one match it's done
-                if regex.match(input):
+                if regex.match(value):
                     return True
         return False
