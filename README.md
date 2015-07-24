@@ -17,7 +17,7 @@ cd pygnata
 python setup.py install
 ```
 
-or with **pip**
+or with **pip**:
 
 ```
 pip install pygnata
