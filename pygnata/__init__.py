@@ -8,7 +8,7 @@
      module, with a one-line summary of each
 """
 
-__version__ = "0.0.1"
+__version__ = "0.0.3"
 
 
 from .pygnata import pygnata_run
