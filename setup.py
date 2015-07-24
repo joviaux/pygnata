@@ -24,7 +24,7 @@ setup(
     author="Alexandre LM, Dimitri S",
     author_email="pygnata@tutanota.com",
     description="Generator of projects tree from template",
-    long_description=open('README.md').read(),
+    long_description='https://github.com/joviaux/pygnata/blob/master/README.md',
     install_requires= required ,
     include_package_data=True,
     url='https://github.com/joviaux/pygnata',
