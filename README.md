@@ -16,6 +16,12 @@ git clone https://github.com/joviaux/pygnata.git
 cd pygnata
 python setup.py install
 ```
+
+or with **pip**
+
+```
+pip install pygnata
+```
 #### Usage
 ##### Create project tree from a .pyg file
 ```
