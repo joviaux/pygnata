@@ -3,11 +3,11 @@
 
 #The MIT License (MIT)
 #Copyright (c) 2015 Alexandre LM, Dimitri S
-
+import os
 from setuptools import setup, find_packages
 
 #Open requirements
-with open(__file__+'/requirements.txt') as f:
+with open(os.path.join(os.path.dirname(__file__),'requirements.txt')) as f:
     required = f.read().splitlines()
 
 # Initiate the setup function
