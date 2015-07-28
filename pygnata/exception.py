@@ -11,6 +11,8 @@ class ProviderError(Exception):
     """
 
     def __init__(self, value):
+        super(ProviderError, self).__init__(value)
+
         self.value = value
 
     def __str__(self):
@@ -25,6 +27,8 @@ class ParserError(Exception):
     """
 
     def __init__(self, value):
+        super(ParserError, self).__init__(value)
+
         self.value = value
 
     def __str__(self):
@@ -39,6 +43,8 @@ class BuilderError(Exception):
     """
 
     def __init__(self, value):
+        super(BuilderError, self).__init__(value)
+
         self.value = value
 
     def __str__(self):
