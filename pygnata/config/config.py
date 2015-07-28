@@ -1,6 +1,10 @@
 # -*- coding: utf-8 -*-
-import configparser
 from path import path
+
+try:
+    import configparser
+except ImportError:
+    import ConfigParser as configparser
 
 #Set the path of the current file
 current = path(__file__)

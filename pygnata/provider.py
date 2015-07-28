@@ -5,7 +5,12 @@
 
 import os.path
 import shutil
-import urllib.request
+
+try:
+    import urllib.request
+except ImportError:
+    import urllib
+
 from .exception import ProviderError
 from .logger import logger
 from .config.config import pygconfig

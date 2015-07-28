@@ -95,14 +95,11 @@ class PygnataDisplay(object):
 
                     #If it is not the first folder
                     if new_path.parent:
-                        #Begin the line with a pipe
-                        print("│", end="")  # lint:ok
-
                         #If it is the last line
                         if index == (len(tree_dic) - 1):
-                            print("  └── {}".format(new_path.name))
+                            print("│  └── {}".format(new_path.name))
                         else:
-                            print("  ├── {}".format(new_path.name))
+                            print("│  ├── {}".format(new_path.name))
 
                     else:
                         #redefine the root
@@ -119,14 +116,11 @@ class PygnataDisplay(object):
 
                 #If the file is the child of the main folder
                 if new_file.parent.parent:
-                    #Begin the line with a pipe
-                    print("│", end="")
-
                     #If it is the last line
                     if index == (len(tree_dic) - 1):
-                        print("     └── {}".format(new_file.name))
+                        print("│     └── {}".format(new_file.name))
                     else:
-                        print("     ├── {}".format(new_file.name))
+                        print("│     ├── {}".format(new_file.name))
                 else:
                     #If it is the last line
                     if index == (len(tree_dic) - 1):
