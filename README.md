@@ -11,7 +11,7 @@ Pygnata is a command-line application for creating a project tree from a templat
 
 #### Setup 
 To install Pygnata, just clone the repository and make a python setup:
-```
+```bash
 git clone https://github.com/joviaux/pygnata.git
 cd pygnata
 python setup.py install
@@ -19,19 +19,26 @@ python setup.py install
 
 or with **pip**:
 
-```
+```bash
 pip install pygnata
 ```
 #### Usage
 ##### Create project tree from a .pyg file
-```
+```bash
 pygnata <my_pyg_file_name>
 ```
 ##### Create a .pyg file from a existing path
-
+```bash
+pygnata create [options] <source_path> <destination_pyg_file_path>
+```
 ##### Show the content of a .pyg file
-
-##### Save a .pyg file 
+```bash
+pygnata show <my_pyg_file_name>
+```
+##### Save a .pyg file in the ~/.pygnata folder
+```bash
+pygnata save <source_pyg_file_path>
+```
 
 ##### 
 
