@@ -42,6 +42,11 @@ pygnata save <source_pyg_file_path>
 
 ##### 
 
-#### Exemple 
+#### Examples
 
-#### The .pyg file
+##### The .pyg file
+
+##### Pre-defined templates
+
+You can find pre-defined templates at https://github.com/joviaux/pygnata-templates
+Feel free to contribute!
