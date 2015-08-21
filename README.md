@@ -49,4 +49,5 @@ pygnata save <source_pyg_file_path>
 ##### Pre-defined templates
 
 You can find pre-defined templates at https://github.com/joviaux/pygnata-templates
-Feel free to contribute!
+
+Feel free to contribute! 
